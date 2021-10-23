@@ -1,0 +1,27 @@
+{
+  "name": "share-resources-accross-stacks",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "author": {
+    "name": "Danny Steenman",
+    "url": "https://towardsthecloud.com",
+    "organization": false
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^10.17.27",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-ec2": "*",
+    "@aws-cdk/aws-ecs-patterns": "*",
+    "@aws-cdk/aws-ecs": "*",
+    "@aws-cdk/aws-logs": "*",
+    "@aws-cdk/aws-rds": "*",
+    "@aws-cdk/core": "*"
+  }
+}
