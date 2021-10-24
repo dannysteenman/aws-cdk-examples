@@ -1,5 +1,5 @@
 {
-  "name": "application-load-balanced-fargate-service",
+  "name": "scheduled-fargate-task",
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
@@ -22,6 +22,7 @@
     "@aws-cdk/aws-ecs": "*",
     "@aws-cdk/aws-logs": "*",
     "@aws-cdk/aws-rds": "*",
-    "@aws-cdk/core": "*"
+    "@aws-cdk/core": "*",
+    "@aws-cdk/aws-events": "*"
   }
 }

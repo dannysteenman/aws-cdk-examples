@@ -3,8 +3,9 @@ import * as cdk from '@aws-cdk/core';
 import * as ecs from '@aws-cdk/aws-ecs';
 import * as ecspatterns from '@aws-cdk/aws-ecs-patterns';
 import * as logs from '@aws-cdk/aws-logs';
+import * as events from '@aws-cdk/aws-events';
 
-export class ECSServiceStack extends cdk.Stack {
+export class ECSCronTaskStack extends cdk.Stack {
   constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
@@ -33,35 +34,42 @@ export class ECSServiceStack extends cdk.Stack {
     });
 
     // Create an ECS cluster
-    const cluster = new ecs.Cluster(this, 'service-cluster', {
-      clusterName: 'service-cluster',
+    const cluster = new ecs.Cluster(this, 'scheduled-task-cluster', {
+      clusterName: 'scheduled-task-cluster',
       containerInsights: true,
       vpc: vpc,
     });
 
     // Create a Fargate container image
-    const image = ecs.ContainerImage.fromRegistry('amazon/amazon-ecs-sample');
+    const image = ecs.ContainerImage.fromRegistry('amazonlinux:2');
 
-    // Create higher level construct containing the Fargate service with a load balancer
-    new ecspatterns.ApplicationLoadBalancedFargateService(this, 'amazon-ecs-sample', {
-      cluster,
-      circuitBreaker: {
-        rollback: true,
-      },
-      cpu: 512,
-      desiredCount: 1,
-      taskImageOptions: {
-        image: image,
-        containerPort: 80,
+    // Create higher level construct containing a scheduled fargate task
+    new ecspatterns.ScheduledFargateTask(this, 'amazon-linux-sleep-task', {
+      schedule: events.Schedule.cron({
+        minute: '0',
+        hour: '13',
+        day: '*',
+        month: '*',
+      }),
+      cluster: cluster,
+      platformVersion: ecs.FargatePlatformVersion.LATEST,
+      scheduledFargateTaskImageOptions: {
         logDriver: ecs.LogDrivers.awsLogs({
           streamPrefix: id,
           logRetention: logs.RetentionDays.ONE_YEAR,
         }),
+        image: image,
+        command: ['sh', '-c', 'sleep 5'],
+        environment: {
+          APP_NAME: id,
+        },
+        memoryLimitMiB: 1024,
+        cpu: 256,
       },
     });
   }
 }
 
 const app = new cdk.App();
-new ECSServiceStack(app, 'ECSServiceStack');
+new ECSCronTaskStack(app, 'ECSCronTaskStack');
 app.synth();
