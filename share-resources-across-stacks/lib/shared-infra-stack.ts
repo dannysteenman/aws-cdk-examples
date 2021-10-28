@@ -9,7 +9,7 @@ export class SharedInfraStack extends cdk.Stack {
     // assign a VPC to the class property SharedInfraStack
     this.vpc = new ec2.Vpc(this, 'SkeletonVpc', {
       cidr: '10.0.0.0/16',
-      natGateways: 1,
+      natGateways: 0,
       maxAzs: 3,
       subnetConfiguration: [
         {

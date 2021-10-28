@@ -11,7 +11,7 @@ export class ECSServiceStack extends cdk.Stack {
     // Create a VPC with 9x subnets divided over 3 AZ's
     const vpc = new ec2.Vpc(this, 'SkeletonVpc', {
       cidr: '172.31.0.0/16',
-      natGateways: 1,
+      natGateways: 0,
       maxAzs: 3,
       subnetConfiguration: [
         {
