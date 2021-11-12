@@ -1,4 +1,4 @@
-# aws-cdk-examples
+# AWS CDK Code Examples
 
 A repository that contains AWS CDK code examples written in Typescript for my blog https://towardsthecloud.com
 
@@ -8,7 +8,7 @@ To run a Typescript example, execute the following:
 
 ```
 $ npm install -g aws-cdk
-$ cd typescript/EXAMPLE_DIRECTORY
+$ cd EXAMPLE_DIRECTORY
 $ npm install
 $ cdk synth
 $ cdk deploy
@@ -26,3 +26,4 @@ $ cdk destroy
 | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | [application-load-balanced-fargate-service](https://towardsthecloud.com/aws-cdk-application-load-balanced-fargate-service-example) | Creating an Application Load Balanced Fargate Service in AWS CDK |
 | [scheduled-fargate-task](https://towardsthecloud.com/aws-cdk-scheduled-fargate-task-example)                                       | Creating a Scheduled Fargate Task example in AWS CDK             |
+| [share-resources-across-stacks](https://towardsthecloud.com/share-resources-across-stacks-aws-cdk)                                 | Creating a stack where you share resources to another stack      |
