@@ -17,11 +17,6 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "@aws-cdk/aws-ec2": "*",
-    "@aws-cdk/aws-ecs-patterns": "*",
-    "@aws-cdk/aws-ecs": "*",
-    "@aws-cdk/aws-logs": "*",
-    "@aws-cdk/aws-rds": "*",
-    "@aws-cdk/core": "*"
+    "aws-cdk-lib": "2.15.0"
   }
 }

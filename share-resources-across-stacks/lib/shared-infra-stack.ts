@@ -1,5 +1,5 @@
-import * as cdk from "@aws-cdk/core";
-import * as ec2 from "@aws-cdk/aws-ec2";
+import * as cdk from 'aws-cdk-lib';
+import * as ec2 from 'aws-cdk-lib/aws-ec2';
 
 export class SharedInfraStack extends cdk.Stack {
   public readonly vpc: ec2.Vpc;
@@ -9,7 +9,7 @@ export class SharedInfraStack extends cdk.Stack {
     // assign a VPC to the class property SharedInfraStack
     this.vpc = new ec2.Vpc(this, 'SkeletonVpc', {
       cidr: '10.0.0.0/16',
-      natGateways: 0,
+      natGateways: 1,
       maxAzs: 3,
       subnetConfiguration: [
         {
@@ -20,12 +20,12 @@ export class SharedInfraStack extends cdk.Stack {
         {
           cidrMask: 20,
           name: 'application',
-          subnetType: ec2.SubnetType.PRIVATE,
+          subnetType: ec2.SubnetType.PRIVATE_WITH_NAT,
         },
         {
           cidrMask: 20,
           name: 'data',
-          subnetType: ec2.SubnetType.ISOLATED,
+          subnetType: ec2.SubnetType.PRIVATE_ISOLATED,
         },
       ],
     });

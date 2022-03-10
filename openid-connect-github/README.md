@@ -22,7 +22,7 @@ git clone git@github.com:dannysteenman/aws-cdk-examples.git
 ### 2. Change to this example directory
 
 ```bash
-cd aws-cdk-examples/openid-connect-example
+cd aws-cdk-examples/openid-connect-github
 ```
 
 ### 3. Install the dependencies
