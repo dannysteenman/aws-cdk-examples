@@ -25,7 +25,7 @@ export interface BitbucketStackProps extends cdk.StackProps {
    * Note: remove https:// from the URL.
    *
    * Example:
-   * api.bitbucket.org/2.0/workspaces/<organization-name>/pipelines-config/identity/oidc
+   * api.bitbucket.org/2.0/workspaces/<WORKSPACE>/pipelines-config/identity/oidc
    *
    * @see https://support.atlassian.com/bitbucket-cloud/docs/deploy-on-aws-using-bitbucket-pipelines-openid-connect/
    */
@@ -63,8 +63,8 @@ export class BitbucketStack extends cdk.Stack {
 const app = new cdk.App();
 new BitbucketStack(app, 'BitbucketOpenIDConnect', {
   deployRole: 'exampleBitbucketDeployRole',
-  //replace <organization-name> with your own organization name
-  bitbucketDomain: 'api.bitbucket.org/2.0/workspaces/<organization-name>/pipelines-config/identity/oidc',
+  //replace <WORKSPACE> with your own unique workspace name
+  bitbucketDomain: 'api.bitbucket.org/2.0/workspaces/<WORKSPACE>/pipelines-config/identity/oidc',
   //replace audience with your audience identifier from the OpenID Connect tab of the bitbucket repository settings
   bitbucketAudience: 'ari:cloud:bitbucket::workspace/680cb3e455d4-f8b9b8d8f8d9-ddbb-4e19-baf1',
 });
