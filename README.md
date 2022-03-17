@@ -1,4 +1,4 @@
-# AWS CDK Code Examples
+# AWS CDK Examples
 
 A repository that contains AWS CDK code examples written in Typescript for my blog https://towardsthecloud.com
 
@@ -22,11 +22,13 @@ $ cdk destroy
 
 ## Table of Contents
 
-| Example                                                                                                                            | Description                                                      |
-| ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| [application-load-balanced-fargate-service](https://towardsthecloud.com/aws-cdk-application-load-balanced-fargate-service-example) | Creating an Application Load Balanced Fargate Service in AWS CDK |
-| [scheduled-fargate-task](https://towardsthecloud.com/aws-cdk-scheduled-fargate-task-example)                                       | Creating a Scheduled Fargate Task example in AWS CDK             |
-| [share-resources-across-stacks](https://towardsthecloud.com/share-resources-across-stacks-aws-cdk)                                 | Creating a stack where you share resources to another stack      |
+| AWS CDK Example                                                                                    | Description                                                      | Blogpost link                                                                                       |
+| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| [application-load-balanced-fargate-service](./application-load-balanced-fargate-service/README.md) | Creating an Application Load Balanced Fargate Service in AWS CDK | [Click here](https://towardsthecloud.com/aws-cdk-application-load-balanced-fargate-service-example) |
+| [openid-connect-bitbucket](./openid-connect-bitbucket/README.md)                                   | Create a Bitbucket OpenID Connect (OIDC) provider in AWS CDK     | [Click here](https://towardsthecloud.com/aws-cdk-openid-connect-bitbucket-example)                  |
+| [openid-connect-github](./openid-connect-github/README.md)                                         | Create a GitHub OpenID Connect (OIDC) provider in AWS CDK        | [Click here](https://towardsthecloud.com/aws-cdk-openid-connect-github-example)                     |
+| [scheduled-fargate-task](./scheduled-fargate-task/README.md)                                       | Creating a Scheduled Fargate Task example in AWS CDK             | [Click here](https://towardsthecloud.com/aws-cdk-scheduled-fargate-task-example)                    |
+| [share-resources-across-stacks](./share-resources-across-stacks/README.md)                         | Creating a stack where you share resources to another stack      | [Click here](https://towardsthecloud.com/share-resources-across-stacks-aws-cdk)                     |
 
 ---
 
