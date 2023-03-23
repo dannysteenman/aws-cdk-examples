@@ -48,7 +48,8 @@ export class ECSServiceStack extends cdk.Stack {
       circuitBreaker: {
         rollback: true,
       },
-      cpu: 512,
+      memoryLimitMiB: 512, // Supported configurations: https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs_patterns.ApplicationMultipleTargetGroupsFargateService.html#memorylimitmib
+      cpu: 256,
       desiredCount: 1,
       taskImageOptions: {
         image: image,
