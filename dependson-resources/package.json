@@ -1,5 +1,5 @@
 {
-  "name": "scheduled-fargate-task",
+  "name": "dependson-resources",
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",

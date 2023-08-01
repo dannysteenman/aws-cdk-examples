@@ -11,6 +11,8 @@
 
 This example is used for the blog post on: https://towardsthecloud.com/share-resources-across-stacks-aws-cdk
 
+<img src="./diagram.png" alt="cdk diagram" width="350"/>
+
 ## How to use this example
 
 ### 1. Clone [this repository](https://github.com/dannysteenman/aws-cdk-examples)

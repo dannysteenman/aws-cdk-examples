@@ -11,6 +11,8 @@
 
 This example is used for the blog post on: https://towardsthecloud.com/aws-cdk-dependson-relation
 
+<img src="./diagram.png" alt="cdk diagram" width="450"/>
+
 ## How to use this example
 
 ### 1. Clone [this repository](https://github.com/dannysteenman/aws-cdk-examples)
