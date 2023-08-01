@@ -22,19 +22,20 @@ $ cdk destroy
 
 ## Table of Contents
 
-| AWS CDK Example                                                                                    | Description                                                      | Blogpost link                                                                                       |
-| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [application-load-balanced-fargate-service](./application-load-balanced-fargate-service/README.md) | Creating an Application Load Balanced Fargate Service in AWS CDK | [Click here](https://towardsthecloud.com/aws-cdk-application-load-balanced-fargate-service-example) |
-| [openid-connect-bitbucket](./openid-connect-bitbucket/README.md)                                   | Create a Bitbucket OpenID Connect (OIDC) provider in AWS CDK     | [Click here](https://towardsthecloud.com/aws-cdk-openid-connect-bitbucket-example)                  |
-| [openid-connect-github](./openid-connect-github/README.md)                                         | Create a GitHub OpenID Connect (OIDC) provider in AWS CDK        | [Click here](https://towardsthecloud.com/aws-cdk-openid-connect-github-example)                     |
-| [scheduled-fargate-task](./scheduled-fargate-task/README.md)                                       | Creating a Scheduled Fargate Task example in AWS CDK             | [Click here](https://towardsthecloud.com/aws-cdk-scheduled-fargate-task-example)                    |
-| [share-resources-across-stacks](./share-resources-across-stacks/README.md)                         | Creating a stack where you share resources to another stack      | [Click here](https://towardsthecloud.com/share-resources-across-stacks-aws-cdk)                     |
+| AWS CDK Example                                                                                    | Description                                                    | Blogpost link                                                                               |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| [application-load-balanced-fargate-service](./application-load-balanced-fargate-service/README.md) | Create an Application Load Balanced Fargate Service in AWS CDK | [Click here](https://towardsthecloud.com/aws-cdk-application-load-balanced-fargate-service) |
+| [scheduled-fargate-task](./custom-role-lambda-function/README.md)                                  | Create a custom IAM role for an AWS Lambda function            | [Click here](https://towardsthecloud.com/aws-cdk-custom-role-lambda-function)               |
+| [openid-connect-bitbucket](./openid-connect-bitbucket/README.md)                                   | Create a Bitbucket OpenID Connect (OIDC) provider in AWS CDK   | [Click here](https://towardsthecloud.com/aws-cdk-openid-connect-bitbucket)                  |
+| [openid-connect-github](./openid-connect-github/README.md)                                         | Create a GitHub OpenID Connect (OIDC) provider in AWS CDK      | [Click here](https://towardsthecloud.com/aws-cdk-openid-connect-github)                     |
+| [scheduled-fargate-task](./scheduled-fargate-task/README.md)                                       | Create a Scheduled Fargate Task example in AWS CDK             | [Click here](https://towardsthecloud.com/aws-cdk-scheduled-fargate-task)                    |
+| [share-resources-across-stacks](./share-resources-across-stacks/README.md)                         | Create a stack where you share resources to another stack      | [Click here](https://towardsthecloud.com/share-resources-across-stacks-aws-cdk)             |
 
 ---
 
 ## Author
 
-**[Danny Steenman](https://towardsthecloud.com)**
+**[Danny Steenman](https://github.com/dannysteenman)**
 
 <p align="left">
   <a href="https://twitter.com/dannysteenman"><img src="https://img.shields.io/twitter/follow/dannysteenman?label=%40dannysteenman&style=social"></a>

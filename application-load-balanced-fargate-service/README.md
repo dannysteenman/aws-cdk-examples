@@ -9,7 +9,7 @@
 
 ## This example is explained in detail on my blog 👇
 
-This example is used for the blog post on: https://towardsthecloud.com/aws-cdk-application-load-balanced-fargate-service-example
+This example is used for the blog post on: https://towardsthecloud.com/aws-cdk-application-load-balanced-fargate-service
 
 ## How to use this example
 
