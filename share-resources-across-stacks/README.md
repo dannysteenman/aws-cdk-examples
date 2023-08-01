@@ -67,7 +67,7 @@ cdk destroy RdsStack
 
 ## Author
 
-**[Danny Steenman](https://towardsthecloud.com)**
+**[Danny Steenman](https://github.com/dannysteenman)**
 
 <p align="left">
   <a href="https://twitter.com/dannysteenman"><img src="https://img.shields.io/twitter/follow/dannysteenman?label=%40dannysteenman&style=social"></a>
