@@ -1,4 +1,4 @@
-# [![AWS CDK Examples Banner](https://raw.githubusercontent.com/dannysteenman/aws-cdk-examples/main/icons/github-header-image.png)](https://towardsthecloud.com)
+# [![AWS CDK Examples Banner](./icons/github-header-image.png)](https://towardsthecloud.com)
 
 # AWS CDK Examples
 
@@ -68,7 +68,7 @@ $ cdk destroy
 
 ## Author
 
-Danny Steenman
+[Danny Steenman](https://towardsthecloud.com/about)
 
 [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dannysteenman)
 [![](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/dannysteenman)
